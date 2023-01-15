@@ -23,7 +23,7 @@ module.exports = handler
 
 async function shortUrl(url) {
   url = encodeURIComponent(url)
-  let res = await fetch(`https://botcahx.ddns.net/api/linkshort/cuttly?link=${url}`)
+  let res = await fetch(`https://ytdl.tiodevhost.my.id/api/linkshort/cuttly?link=${url}`)
   if (!res.ok) throw false
   return await res.text()
 }
